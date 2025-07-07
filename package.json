@@ -1,6 +1,6 @@
 {
   "name": "waifuhaven-api.js",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "description": "Professional Node.js client for Waifu API with Discord bot support, rate limiting, caching, and advanced features",
   "main": "index.js",
   "types": "index.d.ts",
