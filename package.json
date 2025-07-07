@@ -45,15 +45,15 @@
   },
   "homepage": "https://github.com/lNazuna/waifuhaven-api.js#readme",
   "dependencies": {
-    "axios": "^1.6.0"
+    "axios": "^1.10.0"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "eslint": "^8.0.0",
-    "jsdoc": "^4.0.0"
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "peerDependencies": {
     "discord.js": "^14.0.0"

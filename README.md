@@ -67,7 +67,7 @@ const client = new WaifuAPIClient('your-api-key');
 
 // Get random waifu
 const image = await client.getSFW('waifu');
-console.log(image.data.url); // Base64 image data
+console.log(image.url); // Base64 image data
 ```
 
 ## 🤖 Discord Bot - Even Simpler!
@@ -83,7 +83,7 @@ async function waifuCommand(interaction) {
     const image = await client.getSFW('waifu');
     
     // Convert base64 to buffer for Discord
-    const buffer = Buffer.from(image.data.url.split(',')[1], 'base64');
+    const buffer = Buffer.from(image.url.split(',')[1], 'base64');
     
     await interaction.reply({
         files: [{ attachment: buffer, name: 'waifu.jpg' }]
@@ -119,7 +119,7 @@ console.log(categories.nsfw); // ['hentai', 'waifu', ...]
 
 // API health
 const health = await client.getHealth();
-console.log(health.data.status); // "healthy"
+console.log(health.status); // "healthy"
 
 // Your usage stats
 const stats = client.getStats();
@@ -159,7 +159,7 @@ console.log(stats.totalRequests); // 42
 ```javascript
 try {
     const image = await client.getSFW('waifu');
-    console.log('Success!', image.data.filename);
+    console.log('Success!', image.filename);
 } catch (error) {
     if (error.status === 401) {
         console.log('Invalid API key!');
@@ -194,12 +194,12 @@ async function test() {
     try {
         // Test API connection
         const health = await client.getHealth();
-        console.log('✅ API is', health.data.status);
+        console.log('✅ API is', health.status);
         
         // Get a random waifu
         const image = await client.getSFW('waifu');
-        console.log('✅ Got image:', image.data.filename);
-        console.log('📊 File size:', (image.data.size / 1024).toFixed(1), 'KB');
+        console.log('✅ Got image:', image.filename);
+        console.log('📊 File size:', (image.size / 1024).toFixed(1), 'KB');
         
         // Show stats
         const stats = client.getStats();
