@@ -508,7 +508,7 @@ MIT License - use it however you want!
 
 Give a ⭐️ if this made your Discord bot development easier!
 
-## 🚀 What's New in v2.1.0
+## 🚀 What's New in v2.0.0
 
 - 🔒 **Fixed Configuration** - No more configuration headaches, everything is pre-optimized
 - 🧪 **Comprehensive Testing** - Built-in connection testing with detailed diagnostics
